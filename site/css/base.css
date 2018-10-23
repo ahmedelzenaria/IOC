@@ -1,0 +1,561 @@
+h1{
+    color: #202a30;
+}
+
+h2{
+    color: white;
+    
+    
+}
+
+h4{
+  color: #444;
+    font-style: italic;
+}
+p{
+    color: #444;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: #ff7619
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+input{
+    width: 100%;
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 995px) {
+    
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+                
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #slidshow .cover .anim h1{
+        text-align: center;
+        font-size: 5em;
+    }
+    
+}
+
+/* All other devices ----------- */
+@media screen and (min-device-width : 601px){
+    /* Start Header */
+    
+    /* start mediabar */
+    #header .mediabar{
+        height: 48px;
+        width: 100%;
+        background-color: #ff7619; 
+        overflow: hidden;
+    }
+    #header .mediabar .container .row .social{
+        margin: 0;
+        float: left;
+    }
+    
+    #header .mediabar .container .row .social li{
+        height: 48px;
+        text-align: center;
+        display: inline-block;
+        float: left;
+        box-sizing: border-box;
+        border-left: 1px solid white;
+        
+    }
+    #header .mediabar .container .row .social li i{
+        color: white;
+        height: 100%;
+        width: 100%;
+        padding: 15px 14px;
+    }
+    #header .mediabar .container .row .social .linkedin{
+        box-sizing: border-box;
+        border-right: 1px solid white
+    }
+    #header .mediabar .container .row .social li i:hover{
+        background: white;
+        color: #ff7619
+    }
+    
+    
+    
+    #header .mediabar .container .row .qa{
+        float: right;
+        height: 48px;
+    }
+    #header .mediabar .container .row .qa li {
+        margin-right: 0;
+        height: 48px;
+        display: inline-block;
+        border-right: 1px solid white;
+        padding: 10px 16px;
+        color: white
+        
+    }
+    #header .mediabar .container .row .qa li i{
+        width:100%
+    }
+ 
+    #header .mediabar .container .row .qa .support{
+        box-sizing: border-box;
+        border-left: 1px solid white
+    }
+    #header .mediabar .container .row .qa li:hover{
+        background: white;
+        color: #ff7619
+    }
+    
+    /* end mediabar */
+    #header .company{
+        height: 145px;
+        width: 100%;    
+    }
+    #header .company .image img{
+        width: 250px;
+        height: 130px;
+        margin: 0;
+        /*margin-top: 15px;
+        margin-left: 20px;*/
+            
+    }   
+    #header .company .button{
+        color: #ff7619;
+        margin-top: 30px;
+    }
+    #header .company .button p{
+        color: #B6B6B6;
+    }
+    #header .company .button .email{
+        height: 80px;
+    }
+    #header .company .button .email span{
+        /*margin-top: 30px;*/
+        border: 1px solid #B6B6B6;
+        padding: 15px;
+        font-size: 30px; 
+    }
+    
+   #header .company .button .phone span{
+        border: 1px solid #B6B6B6;
+        padding: 15px;
+        font-size: 30px;
+    }
+    /* end Header */
+    
+    /* Start navbar */
+    
+    #navbar{
+        height: 75px;
+        width: 100%;
+        background-color: rgb(38,47,54);
+        z-index: 3
+    }
+    .topnav {
+        overflow: hidden;
+        height: 75px;
+        width: 100%;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 26px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #ff7619;
+      color: rgb(38,47,54);
+        height: 75px;
+    }
+
+    .active {
+      background-color: #ff7619;
+      color: white;
+        height: 75px;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+    
+  /* End navbar */
+   
+    
+    /* start Slideshow */
+    #slideshow{
+        height: 600px;
+        width: 100%;
+        background-color: darkgray;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .header-wrapper {
+          overflow: hidden;
+          width:100%;
+          height:100%;
+          text-align:center;
+    }
+
+    .zoominheader {
+        width:100%;
+        height:100%;
+        text-align:center;
+        background: url("../img/1.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-animation: zoomin 15s ease-in infinite;
+        animation: zoomin 15s ease-in infinite;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+    }
+
+    /* The innermost element*/
+    .zoomoutheader {
+        width:400px;
+        height:200px;
+        text-align:center;
+        background: none;
+        -webkit-animation: zoomout 10s ease-in infinite;
+        animation: zoomout 10s ease-in infinite;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+    }
+
+
+
+    /* Zoom in Keyframes */
+    @-webkit-keyframes zoomin {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.5);}
+        100% {transform: scale(1);}
+    }
+    @keyframes zoomin {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.5);}
+        100% {transform: scale(1);}
+    } /*End of Zoom in Keyframes */
+
+    /* Zoom out Keyframes */
+    @-webkit-keyframes zoomout {
+        0% {transform: scale(1);}
+        50% {transform: scale(0.67);}
+        100% {transform: scale(1);}
+    }
+    @keyframes zoomout {
+        0% {transform: scale(1);}
+        50% {transform: scale(0.67);}
+        100% {transform: scale(1);}
+    }/*End of Zoom out Keyframes */
+
+    /*Style for the text*/
+    .text{
+        color:red;
+        font-weight:bold; 
+    }
+    .cover{
+        height:100%;
+        width: 100%;
+        //background: rgb(38,47,54);
+        position: absolute;
+        top: 273px; 
+        //opacity: 0.5;
+        z-index: 2;
+        
+    }
+    .cover .anim{
+        
+        margin-left: 30%;
+    }
+    .cover .anim h2{
+        font-size: 50px;
+        animation: type 3s steps(22);
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 4px solid white
+    }
+    @keyframes type{
+        0%{
+            width: 0ch;
+        }
+        100%{
+            width: 25ch;
+        }
+    }
+    /* end navebar */
+    
+    
+    
+    
+    /* Start about us */
+    #aboutus{
+        height:auto;
+        width: 100%;
+        padding-top: 40px;
+    }
+    #aboutus .aboutus-head{
+       text-align: center
+    }
+    #aboutus .aboutus-head p{
+        font-family: tahoma;
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center
+    }
+    #aboutus .aboutus-head .double-line{
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        width: 120px;
+        height: 6px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 1px solid #ff7619;
+        border-bottom: 1px solid #ff7619;
+    }
+    #aboutus .aboutus-body{
+        font-family: tahoma;
+        font-size: 15px;
+        line-height: 1.9;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #aboutus .aboutus-body p{color: #8b8484;340}
+    
+    /* End About Us */
+    .whatwe{
+        height: auto;
+        width: 99%;
+        margin-left: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 20px #ccc;
+        padding: 30px;
+    }
+    .whatwe .whatwe-head{
+        font-family: tahoma;
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center
+    }
+    .whatwe .whatwe-body{
+        font-family: tahoma;
+        
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+            
+    }
+    .whatwe .whatwe-body p{color: #8b8484;340}
+    
+    
+    
+    /* Start services */
+    #services{
+        height: auto;
+        width: 100%;
+        /*background-color: rgb(255,118,25);*/
+        background-color: white;
+        margin-top: 80px;
+        overflow: hidden;
+    }
+    #services .services-head{
+       text-align: center
+    }
+    #services .services-head p{
+        font-family: tahoma;
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center
+    }
+    #services .services-head .double-line{
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        width: 120px;
+        height: 6px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 1px solid #ff7619;
+        border-bottom: 1px solid #ff7619;
+    }
+    #services .services-body{
+        height: 500px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #services .services-body .services-content{
+        background: #fff;
+        padding: 3px;
+        height: 400px;
+    }
+    #services .services-body .services-content:hover{
+        border: 1px solid rgb(255,118,25);
+    }
+    #services .services-body .services-content .services-image img{
+        width: 100%;
+        height: 131px;
+        position: relative;
+    }
+    #services .services-body .services-title{
+        background: rgb(255,118,25);
+        color: #2f2e2e;
+        overflow: hidden;
+        height: 36px;
+        margin: 0;
+        padding: 0 10px;
+        font-size: 17px;
+        line-height: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+    #services .services-body .services-explanation ul li{
+        color: #8b8484;
+        line-height: 1.0;
+        font-family: tahoma;
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+    #services .services-body{}
+   /* #services .item{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(38,47,54);
+    }
+    #services .item img{
+        width: 380px;
+        height: 300px;
+        margin-top: 25px;
+            
+    }*/
+    
+    
+    
+    
+    
+    
+    /*end services */
+    
+    /* start contact us */
+    #contactus{
+        height: auto;
+        width: 100%;
+        background-color: rgb(38,47,54);
+        padding-bottom: 50px;
+    }
+    /*Start Location */
+    #location{
+        height: 340px;
+        width: 100%;
+        background-color: rgb(255,118,25);
+        overflow: hidden;
+        position: relative
+            
+    }
+    .location .cover{
+        width  : 500px;
+    height : 380px;
+    background: red;
+    position: absolute;
+    opacity: 0.5;/*add this*/
+    top: 0px; 
+    left: 0px; 
+    z-index: 99;
+    }
+    /* end Location */
+    
+    #contactus .contactus-details .contactus-inf {
+        width: 100%
+        float:left;
+        padding-top: 30px
+        
+    }
+    #contactus .contactus-details .contactdetails{
+        color: white;
+        padding-top: 50px;
+    }
+    #contactus .contactus-details .contactdetails input,textarea{
+        width: 540px;
+        background: #ccc
+    } 
+    #contactus .contactus-details .contactdetails textarea{
+        width: 540px;
+        height: 120px;
+        background: #ccc
+    }
+    #contactus .contactus-details .contactdetails .btn-warning{
+        width: 540px;
+        background-color: #ff7619;
+        margin-top: 10px;
+    }
+    #contactus .contactus-details .contactdetails .btn-warning:hover{
+        border: 1px solid white;
+        color: rgb(38,47,54)
+    }
+    /* End Contact US */
+    #footer{
+        height: 65px;
+        width: 100%;
+        background-color: rgb(38,47,54);
+        padding:  15px 0 0 130px;
+        border-top: 1px solid #B6B6B6;
+        box-shadow: 0px 0px 2px #B6B6B6
+        
+    }
+}
